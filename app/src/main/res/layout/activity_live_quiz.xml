@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LiveQuiz">
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KQL"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:textColor="#FFEB3B"
+            android:layout_marginStart="20dp"
+            android:fontFamily="monospace">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/myquiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="#F33A79"
+            android:fontFamily="sans-serif-condensed"
+            android:text="My Quizzes"
+            android:textColor="#EFEDED"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </Button>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+
+
+                android:src="@drawable/img1" />
+            <LinearLayout
+                android:layout_width="246dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="218dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Host Live Quizzes on KQL"
+                    android:textColor="#1C1DCB"
+                    android:textSize="21sp"
+
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="#99000000"
+                    android:textSize="12sp"
+                    android:text="Host online quizzes live and interact with your participants in real time with KQL">
+
+                </TextView>
+                <Button
+                    android:id="@+id/crtquiz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#239B86"
+                    android:text="Create a Quiz >">
+
+                </Button>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#320231"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:text="What Are Live Quizzes?"
+            android:textAlignment="center">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#AE000000"
+            android:textAlignment="center"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:text="Quizzio brings you the excitement of live quizzes—real-time, interactive sessions where players compete to answer questions quickly and accurately. Whether you're in a classroom, attending an online event, or just looking for some fun, Quizzio makes learning and competition come alive! In each live quiz, questions appear one by one with a countdown timer. The faster and more accurately you answer, the more points you earn. Scores are displayed on a live leaderboard, fueling friendly competition and keeping everyone engaged from start to finish.">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/joinquiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="70dp"
+            android:backgroundTint="#0A1898"
+            android:textSize="20dp"
+            android:text="Join a Quiz">
+
+        </Button>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

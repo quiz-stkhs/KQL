@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="#7AD1C3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateQuiz">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:paddingBottom="0dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="monospace"
+            android:text="Welcome,"
+            android:textColor="#1B2E72"
+            android:textSize="40dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/Onm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65sp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#022003"
+            android:textSize="30sp">
+
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="22dp"
+                android:id="@+id/nm"
+
+
+                android:fontFamily="casual"
+                android:textColorHint="#370C84"
+                android:textStyle="bold"
+                android:hint="Enter Quiz Name"
+                android:textColor="#390732">
+
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Create Room Code"
+                android:textSize="20dp"
+                android:id="@+id/code"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:textColorHint="#061162"
+                android:maxLength="8"
+                android:inputType="number"
+                android:textColor="#033211"
+                android:layout_height="match_parent">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Choose Time"
+
+                android:textSize="20dp"
+                android:id="@+id/time"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:textColorHint="#061162"
+                android:maxLength="8"
+                android:inputType="time"
+                android:textColor="#033211"
+                android:layout_height="match_parent">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="2.5"
+
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="Choose Date"
+                    android:textSize="20dp"
+                    android:enabled="false"
+                    android:id="@+id/edCal"
+
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:textColorHint="#061162"
+                    android:inputType="date"
+                    android:textColor="#033211"
+                    android:layout_height="match_parent">
+
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageView
+                android:layout_width="0dp"
+                android:id="@+id/imgCal"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/calendar"/>
+
+
+        </LinearLayout>
+
+        <CalendarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cal"
+            android:layout_marginTop="15dp"/>
+        <Button
+            android:id="@+id/nxtquiz"
+            android:layout_width="138dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#5E0F72"
+            android:text="Next  -->"
+            android:textColor="#F3EBA2"
+            android:textSize="20dp">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</ScrollView>

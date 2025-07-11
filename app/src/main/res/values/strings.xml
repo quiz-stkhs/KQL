@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">KQL</string>
+    <string-array name="Choose_Role">
+        <item>Choose Role</item>
+        <item>President</item>
+        <item>Teacher</item>
+        <item>Secretary</item>
+        <item>Admin</item>
+        <item>Member</item>
+    </string-array>
+    <string name="navigation_drawer_open">Open drawer</string>
+    <string name="navigation_drawer_close">Close drawer</string>
+</resources>

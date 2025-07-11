@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#E1D6D6"
+    android:id="@+id/main"
+
+    android:layout_height="match_parent"
+    tools:context=".instructions">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:textColor="#EBF4E8"
+            android:background="#2196F3"
+            android:padding="10dp"
+            android:id="@+id/qnm1"
+            android:text="Quiz_Name (34503)">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:textColor="#09470C"
+            android:text="Instructions">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/instr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="300dp"
+
+            android:layout_margin="25dp"
+            android:background="@drawable/backgrd"
+            android:textAlignment="center"
+            android:textColor="#042D3E"
+            android:cursorVisible="true"
+            android:fontFamily="sans-serif-black"
+
+            android:textSize="18sp"
+
+            android:textStyle="italic">
+
+        </EditText>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/publishquiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="-2dp"
+                android:backgroundTint="#4CAF50"
+                android:text="Request Approval">
+
+            </Button>
+
+            <Button
+                android:id="@+id/savequiz"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Save Quiz"
+                android:backgroundTint="#E91E63"
+                android:layout_alignParentRight="true">
+
+            </Button>
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="40dp"
+            android:background="#000">
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+
+                    android:gravity="center_vertical"
+                    android:text="Welcome, "
+                    android:textColor="#eebbff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:text="Ambar"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/name"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background2"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/role"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:gravity="center_vertical"
+                    android:textColor="#FFEB3B"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:text="7541868496"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/email"
+                    android:text="ambarsinha06@gmail.com"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:gravity="center_vertical"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".UploadQns">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Quiz Name -->
+        <TextView
+            android:id="@+id/qnm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_gradient"
+            android:padding="16dp"
+            android:text="Quiz_Name"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Question Number -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Q"
+                android:textColor="#F06292"
+                android:textSize="42sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/qno"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/textView"
+                android:layout_marginStart="4dp"
+                android:text="1"
+                android:textColor="#F06292"
+                android:textSize="42sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/qno"
+                android:layout_marginStart="2dp"
+                android:text=")"
+                android:textColor="#F06292"
+                android:textSize="42sp"
+                android:textStyle="bold" />
+            <Button
+                android:layout_alignParentRight="true"
+                android:id="@+id/finish"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#D32F2F"
+                android:paddingHorizontal="40dp"
+                android:paddingVertical="12dp"
+                android:text="Save And Continue"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <!-- Question Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Type your question here..."
+            android:textColorHint="#000000"
+            android:outlineProvider="background"
+            app:hintTextColor="#000000">
+
+            <EditText
+                android:id="@+id/qn"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/backgrd"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:textColor="#FFFFFF" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Answer Field -->
+        <EditText
+            android:id="@+id/ans"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+
+            android:hint="Enter Answer"
+            android:textAlignment="center"
+            android:textColorHint="#BBDEFB"
+            android:textColor="#000000"
+            android:background="@drawable/backgrd3" />
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/nxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:paddingHorizontal="40dp"
+            android:text="Next Question   →"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#388E3C" />
+
+        <!-- Finish Button -->
+
+    </LinearLayout>
+</ScrollView>

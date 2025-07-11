@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F6C8D8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:padding="16dp">
+
+    <!-- Quiz Title Bar -->
+    <TextView
+        android:id="@+id/qnm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3949AB"
+        android:padding="14dp"
+        android:text="Quiz_Name"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Question Number Row -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Q"
+            android:textSize="40sp"
+            android:textColor="#BF0A4B"
+            android:textStyle="bold"
+            android:fontFamily="monospace" />
+
+        <TextView
+            android:id="@+id/qno"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_marginStart="10dp"
+            android:text="1"
+            android:textSize="40sp"
+            android:textColor="#BF0A4B"
+            android:textStyle="bold"
+            android:fontFamily="monospace" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/qno"
+            android:layout_marginStart="6dp"
+            android:text=")"
+            android:textSize="40sp"
+            android:textColor="#BF0A4B"
+            android:textStyle="bold"
+            android:fontFamily="monospace" />
+
+
+    </RelativeLayout>
+
+    <!-- Question Display (disabled EditText in TextInputLayout) -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp">
+
+        <EditText
+            android:id="@+id/qn"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:enabled="false"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:fontFamily="sans-serif" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Start/Next Button -->
+    <TextView
+        android:id="@+id/nxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Start Quiz"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="12dp"
+        android:background="@drawable/start_quiz_btn"
+        android:elevation="6dp" />
+<!--    <Button-->
+<!--        android:id="@+id/btnParticipantList"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:backgroundTint="#FFFFFF"-->
+<!--        android:text="Participants"-->
+<!--        android:textColor="#000"-->
+<!--        android:elevation="2dp"-->
+<!--        android:textStyle="bold" />-->
+    <!-- Live Answers List -->
+    <ListView
+        android:id="@+id/listViewAns"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:divider="#BDBDBD"
+        android:dividerHeight="1dp" />
+</LinearLayout>

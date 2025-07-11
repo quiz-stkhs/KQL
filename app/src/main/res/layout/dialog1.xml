@@ -1,0 +1,186 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bubble_background"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:id="@+id/tvDialogTitle"
+        android:text="Confirm Request"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="0dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_marginBottom="0dp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#660011"
+
+
+                    android:fontFamily="cursive"
+                    android:text="Quiz Name:  "/>
+
+                <EditText
+                    android:id="@+id/Qnm"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:editable="false"
+                    android:fontFamily="monospace"
+                    android:gravity="center_vertical"
+                    android:textColor="#C000FF"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="#660011"
+                    android:gravity="center_vertical"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:fontFamily="cursive"
+                    android:text="Req. Name.:"/>
+                <EditText
+                    android:textColor="#C000FF"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"
+                    android:editable="false"
+                    android:id="@+id/nm"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="#660011"
+                    android:layout_width="75dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:fontFamily="cursive"
+                    android:text="Date:"/>
+                <EditText
+                    android:textColor="#C000FF"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:fontFamily="monospace"
+                    android:editable="false"
+                    android:id="@+id/date"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="#660011"
+                    android:layout_width="75dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:fontFamily="cursive"
+                    android:text="Time:"/>
+                <EditText
+                    android:textColor="#C000FF"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:fontFamily="monospace"
+                    android:editable="false"
+                    android:id="@+id/time"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+
+            <TextView
+                android:id="@+id/btnApprove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/background10"
+                android:paddingLeft="30dp"
+                android:paddingTop="15dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="15dp"
+                android:text="Approve"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/background10"
+                android:paddingLeft="40dp"
+                android:paddingTop="15dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="15dp"
+                android:text="Edit"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

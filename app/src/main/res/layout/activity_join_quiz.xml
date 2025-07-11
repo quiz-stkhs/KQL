@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".JoinQuiz">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/rcode"
+            android:layout_width="match_parent"
+            android:hint="Enter Room Code....."
+            android:textSize="20dp"
+            android:maxLength="10"
+            android:textColorHint="#9AAABB"
+            android:textColor="#CDDC39"
+            android:drawablePadding="15dp"
+            android:textAlignment="textStart"
+            android:padding="15dp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/srch"
+            android:background="@drawable/back_edittext"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/srchroom"
+            android:backgroundTint="#0A497B"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Search"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textStyle="italic"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:id="@+id/codeview"
+        >
+
+    </TextView>
+
+    <Button
+        android:id="@+id/qzrmjoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join Quiz Room"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#E4EF7A"
+        android:backgroundTint="#07124E" >
+
+    </Button>
+</LinearLayout>

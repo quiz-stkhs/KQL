@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    tools:context=".CheckHostRequests">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background9"
+        android:padding="0dp"
+
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Pnm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_centerInParent="true"
+                    android:gravity="left"
+                    android:padding="0dp"
+                    android:text="Requestee Name"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#ffffff" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    >
+                    <TextView
+                        android:id="@+id/Pmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="0dp"
+                        android:gravity="center"
+                        android:text="Requestee Email"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#ffffff"
+                        />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="13dp"
+                android:background="#61DAFF"/>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:orientation="horizontal">
+                <!--  <Button
+                      android:layout_width="wrap_content"
+                      android:layout_height="25dp"
+                      android:layout_marginLeft="5dp"
+
+                      android:padding="2dp"
+                      android:text=" Edit "
+                      android:textAppearance="?android:attr/textAppearanceSmall"
+                      android:background="@drawable/background2"
+                      android:textColor="#fff"
+                      android:onClick="editSurvey"
+                      android:textStyle="bold" />-->
+                <TextView
+                    android:id="@+id/nm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:padding="0dp"
+                    android:text="Quiz Name"
+                    android:textSize="20sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFEB3B"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="13dp"
+                android:background="#61DAFF"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/roomCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_centerInParent="true"
+                    android:gravity="left"
+                    android:padding="0dp"
+                    android:text="Room Code"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#ffffff" />
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerInParent="true"
+                    android:gravity="left"
+                    android:padding="0dp"
+                    android:text="Date"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="0dp"
+                    android:gravity="center"
+                    android:text="Time"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#ffffff"
+                    />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- <View android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="#ff5678"/>-->
+
+
+    </LinearLayout>
+    <ListView
+
+        android:id="@+id/listt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+<group>
+
+        <item android:id="@+id/nav_add_quiz_event" android:title="Schedule Quiz Event / Schedule Practice Session" />
+        <item android:id="@+id/nav_send_announcement" android:title="Announcements" />
+        <item android:id="@+id/nav_check_leave_requests" android:title="Check Leave Requests" />
+        <item android:id="@+id/nav_check_quiz" android:title="Check Upcoming Quiz / Practice Session" />
+        <item android:id="@+id/nav_check_quiz_requests" android:title="Check Live Quiz Requests" />
+        <item android:id="@+id/nav_host_live_quiz" android:title="Live Quizzes" />
+        <item android:id="@+id/nav_add_member" android:title="Add Member" />
+        <item android:id="@+id/nav_check_member_list" android:title="Check Member List" />
+        <item android:id="@+id/nav_leaderboard" android:title="Leaderboard" />
+        <item android:id="@+id/nav_check_archives" android:title="Check Archives"/>
+        <item android:id="@+id/logout" android:title="Logout"/>
+
+</group>
+</menu>

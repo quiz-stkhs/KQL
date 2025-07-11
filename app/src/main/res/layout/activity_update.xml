@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/rounded_card_bg"
+        android:elevation="8dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_update"
+            android:layout_gravity="center"
+            android:contentDescription="Update Icon" />
+
+        <TextView
+            android:id="@+id/update_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Required"
+            android:textColor="#2C3E50"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/update_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This version of the app is no longer supported.\n\nPlease contact Quiz Club Administration for the latest update."
+            android:textColor="#34495E"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>
+<!--<Button-->
+<!--android:id="@+id/contact_admin"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="Contact Admin"-->
+<!--android:textAllCaps="false"-->
+<!--android:layout_marginTop="24dp"-->
+<!--android:backgroundTint="#2980B9"-->
+<!--android:textColor="#FFFFFF"-->
+<!--android:paddingStart="24dp"-->
+<!--android:paddingEnd="24dp" />-->

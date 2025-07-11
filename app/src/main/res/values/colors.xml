@@ -1,0 +1,32 @@
+<resources>
+    <!-- Base Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_light">#EEEEEE</color>
+    <color name="gray_dark">#444444</color>
+
+    <!-- Gradient Colors -->
+    <color name="gradient_start">#3A1C71</color>
+    <color name="gradient_center">#D76D77</color>
+    <color name="gradient_end">#FFAF7B</color>
+
+    <!-- Role Tag Colors -->
+    <color name="role_president">#4CAF50</color> <!-- Green -->
+    <color name="role_secretary">#2196F3</color> <!-- Blue -->
+    <color name="role_teacher">#9C27B0</color> <!-- Purple -->
+    <color name="role_admin">#F44336</color> <!-- Red -->
+    <color name="role_member">#FF9800</color> <!-- Orange -->
+    <color name="role_default">#9E9E9E</color> <!-- Gray -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="gray_text">#333333</color>
+    <color name="blue">#2196F3</color> <!-- Material Blue 500 -->
+    <color name="red">#F44336</color> <!-- Material Red 500 -->
+
+
+    <!-- Checkbox Tint -->
+    <color name="checkbox_tint">#7E57C2</color> <!-- Deep Purple -->
+</resources>

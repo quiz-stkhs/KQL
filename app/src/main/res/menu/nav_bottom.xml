@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu"
+        android:icon="@drawable/menu_icon"
+        android:title="Menu">
+
+    </item>
+
+    <item android:id="@+id/announcement"
+        android:icon="@drawable/announcement_icon"
+        android:title="Announcement">
+
+    </item>
+    <item android:id="@+id/home"
+        android:icon="@drawable/home_icon"
+        android:title="Home">
+
+    </item>
+    <item android:id="@+id/joinqz"
+        android:icon="@drawable/joinquiz_icon"
+        android:title="Join Live Quiz">
+
+    </item>
+
+    <item android:id="@+id/leaderboard"
+        android:icon="@drawable/leaderboard_icon"
+        android:title="Leaderboard"
+        >
+
+    </item>
+</menu>
